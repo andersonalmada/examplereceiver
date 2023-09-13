@@ -4,7 +4,7 @@
 //go:build windows
 // +build windows
 
-package pagingscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/pagingscraper"
+package pagingscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/pagingscraper"
 
 import (
 	"context"
@@ -19,8 +19,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 	"go.uber.org/zap"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/perfcounters"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/pagingscraper/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal/perfcounters"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/pagingscraper/internal/metadata"
 )
 
 const (

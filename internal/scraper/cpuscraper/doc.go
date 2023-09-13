@@ -6,4 +6,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package cpuscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/cpuscraper"
+package cpuscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/cpuscraper"

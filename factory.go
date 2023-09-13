@@ -1,7 +1,7 @@
 // Copyright The OpenTelemetry Authors
 // SPDX-License-Identifier: Apache-2.0
 
-package examplereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver"
+package examplereceiver // import "github.com/andersonalmada/examplereceiver"
 
 import (
 	"context"
@@ -13,17 +13,17 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scraperhelper"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/cpuscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/diskscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/filesystemscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/loadscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/memoryscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/networkscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/pagingscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processesscraper"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processscraper"
+	"github.com/andersonalmada/examplereceiver/internal"
+	"github.com/andersonalmada/examplereceiver/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/cpuscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/diskscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/filesystemscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/loadscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/memoryscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/networkscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/pagingscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processesscraper"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processscraper"
 )
 
 // This file implements Factory for HostMetrics receiver.

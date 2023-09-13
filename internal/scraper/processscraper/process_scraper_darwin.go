@@ -4,7 +4,7 @@
 //go:build darwin
 // +build darwin
 
-package processscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processscraper"
+package processscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/processscraper"
 
 import (
 	"regexp"
@@ -12,8 +12,8 @@ import (
 	"github.com/shirou/gopsutil/v3/cpu"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processscraper/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processscraper/ucal"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processscraper/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processscraper/ucal"
 )
 
 func (s *scraper) recordCPUTimeMetric(now pcommon.Timestamp, cpuTime *cpu.TimesStat) {

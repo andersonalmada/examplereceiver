@@ -4,4 +4,4 @@
 //go:generate mdatagen metadata.yaml
 
 // Package examplereceiver reads metrics like CPU usage, disk usage, and network usage from the host.
-package examplereceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver"
+package examplereceiver // import "github.com/andersonalmada/examplereceiver"

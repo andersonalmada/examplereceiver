@@ -4,13 +4,13 @@
 //go:build linux
 // +build linux
 
-package memoryscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/memoryscraper"
+package memoryscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/memoryscraper"
 
 import (
 	"github.com/shirou/gopsutil/v3/mem"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/memoryscraper/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/memoryscraper/internal/metadata"
 )
 
 func (s *scraper) recordMemoryUsageMetric(now pcommon.Timestamp, memInfo *mem.VirtualMemoryStat) {

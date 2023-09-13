@@ -4,7 +4,7 @@
 //go:build !windows
 // +build !windows
 
-package diskscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/diskscraper"
+package diskscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/diskscraper"
 
 import (
 	"context"
@@ -20,8 +20,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
+	"github.com/andersonalmada/examplereceiver/internal/scraper/diskscraper/internal/metadata"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/diskscraper/internal/metadata"
 )
 
 const (

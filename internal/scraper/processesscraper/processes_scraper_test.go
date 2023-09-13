@@ -20,8 +20,8 @@ import (
 	"go.opentelemetry.io/collector/receiver/receivertest"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/processesscraper/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processesscraper/internal/metadata"
 )
 
 var (

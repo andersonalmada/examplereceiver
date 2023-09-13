@@ -6,4 +6,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package filesystemscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/examplereceiver/internal/scraper/filesystemscraper"
+package filesystemscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/filesystemscraper"
