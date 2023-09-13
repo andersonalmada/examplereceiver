@@ -5,8 +5,8 @@ package diskscraper // import "github.com/andersonalmada/examplereceiver/interna
 
 import (
 	"github.com/andersonalmada/examplereceiver/internal"
-	"github.com/andersonalmada/examplereceiver/internal/filter/filterset"
 	"github.com/andersonalmada/examplereceiver/internal/scraper/diskscraper/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
 )
 
 // Config relating to Disk Metric Scraper.

@@ -20,8 +20,8 @@ import (
 	"go.opentelemetry.io/collector/receiver"
 	"go.opentelemetry.io/collector/receiver/scrapererror"
 
+	"github.com/andersonalmada/examplereceiver/internal/filter/filterset"
 	"github.com/andersonalmada/examplereceiver/internal/scraper/diskscraper/internal/metadata"
-	"github.com/open-telemetry/opentelemetry-collector-contrib/internal/filter/filterset"
 )
 
 const (
