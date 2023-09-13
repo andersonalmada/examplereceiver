@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/memory metrics.
+// MetricsConfig provides config for hostmetricsreceiver/memory metrics.
 type MetricsConfig struct {
 	SystemMemoryUsage       MetricConfig `mapstructure:"system.memory.usage"`
 	SystemMemoryUtilization MetricConfig `mapstructure:"system.memory.utilization"`
@@ -40,7 +40,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/memory metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/memory metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

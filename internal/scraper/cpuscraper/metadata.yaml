@@ -1,4 +1,4 @@
-type: examplereceiver/cpu
+type: hostmetricsreceiver/cpu
 
 parent: hostmetrics
 

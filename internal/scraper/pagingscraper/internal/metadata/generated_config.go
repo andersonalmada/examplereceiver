@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/paging metrics.
+// MetricsConfig provides config for hostmetricsreceiver/paging metrics.
 type MetricsConfig struct {
 	SystemPagingFaults      MetricConfig `mapstructure:"system.paging.faults"`
 	SystemPagingOperations  MetricConfig `mapstructure:"system.paging.operations"`
@@ -48,7 +48,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/paging metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/paging metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

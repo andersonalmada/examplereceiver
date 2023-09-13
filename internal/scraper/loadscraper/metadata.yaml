@@ -1,4 +1,4 @@
-type: examplereceiver/load
+type: hostmetricsreceiver/load
 
 parent: hostmetrics
 

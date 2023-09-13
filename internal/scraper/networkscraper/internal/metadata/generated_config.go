@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/network metrics.
+// MetricsConfig provides config for hostmetricsreceiver/network metrics.
 type MetricsConfig struct {
 	SystemNetworkConnections    MetricConfig `mapstructure:"system.network.connections"`
 	SystemNetworkConntrackCount MetricConfig `mapstructure:"system.network.conntrack.count"`
@@ -60,7 +60,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/network metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/network metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

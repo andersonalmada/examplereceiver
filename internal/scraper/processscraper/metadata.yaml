@@ -1,4 +1,4 @@
-type: examplereceiver/process
+type: hostmetricsreceiver/process
 
 parent: hostmetrics
 
@@ -161,7 +161,7 @@ metrics:
     enabled: false
     description: Number of file descriptors in use by the process.
     extended_documentation: This metric is only available on Linux.
-    unit: "{count}"
+    unit: '{count}'
     sum:
       value_type: int
       aggregation_temporality: cumulative
@@ -171,17 +171,17 @@ metrics:
     enabled: false
     description: Number of handles held by the process.
     extended_documentation: This metric is only available on Windows.
-    unit: "{count}"
+    unit: '{count}'
     sum:
       value_type: int
       aggregation_temporality: cumulative
       monotonic: false
-
+  
   process.context_switches:
     enabled: false
     description: Number of times the process has been context switched.
     extended_documentation: This metric is only available on Linux.
-    unit: "{count}"
+    unit: '{count}'
     sum:
       value_type: int
       aggregation_temporality: cumulative

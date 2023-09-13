@@ -3,7 +3,7 @@
 
 //go:build linux
 
-package examplereceiver // import "github.com/andersonalmada/examplereceiver"
+package hostmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
 
 import (
 	"fmt"
@@ -22,7 +22,7 @@ var gopsutilEnvVars = map[common.EnvKeyType]string{
 	common.HostDevEnvKey:  "/dev",
 }
 
-// This exists to validate that different instances of the examplereceiver do not
+// This exists to validate that different instances of the hostmetricsreceiver do not
 // have inconsistent root_path configurations. The root_path is passed down to gopsutil
 // through env vars, so it must be consistent across the process.
 var globalRootPath string
@@ -33,7 +33,7 @@ func validateRootPath(rootPath string) error {
 	}
 
 	if globalRootPath != "" && rootPath != globalRootPath {
-		return fmt.Errorf("inconsistent root_path configuration detected between examplereceivers: `%s` != `%s`", globalRootPath, rootPath)
+		return fmt.Errorf("inconsistent root_path configuration detected between hostmetricsreceivers: `%s` != `%s`", globalRootPath, rootPath)
 	}
 	globalRootPath = rootPath
 

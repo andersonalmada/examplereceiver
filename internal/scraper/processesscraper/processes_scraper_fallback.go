@@ -4,7 +4,7 @@
 //go:build !linux && !darwin && !freebsd && !openbsd
 // +build !linux,!darwin,!freebsd,!openbsd
 
-package processesscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/processesscraper"
+package processesscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processesscraper"
 
 const enableProcessesCount = false
 const enableProcessesCreated = false

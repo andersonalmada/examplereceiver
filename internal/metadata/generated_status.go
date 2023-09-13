@@ -7,6 +7,6 @@ import (
 )
 
 const (
-	Type             = "examplereceiver"
+	Type             = "hostmetrics"
 	MetricsStability = component.StabilityLevelBeta
 )

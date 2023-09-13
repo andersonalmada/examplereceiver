@@ -3,7 +3,7 @@
 
 //go:build !linux
 
-package examplereceiver // import "github.com/andersonalmada/examplereceiver"
+package hostmetricsreceiver // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver"
 
 import (
 	"fmt"

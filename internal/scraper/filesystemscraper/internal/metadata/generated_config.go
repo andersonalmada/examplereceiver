@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/filesystem metrics.
+// MetricsConfig provides config for hostmetricsreceiver/filesystem metrics.
 type MetricsConfig struct {
 	SystemFilesystemInodesUsage MetricConfig `mapstructure:"system.filesystem.inodes.usage"`
 	SystemFilesystemUsage       MetricConfig `mapstructure:"system.filesystem.usage"`
@@ -44,7 +44,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/filesystem metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/filesystem metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

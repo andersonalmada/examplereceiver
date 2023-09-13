@@ -1,4 +1,4 @@
-module github.com/andersonalmada/examplereceiver
+module github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver
 
 go 1.20
 

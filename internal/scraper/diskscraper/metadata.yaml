@@ -1,4 +1,4 @@
-type: examplereceiver/disk
+type: hostmetricsreceiver/disk
 
 parent: hostmetrics
 

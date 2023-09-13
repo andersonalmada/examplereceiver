@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/disk metrics.
+// MetricsConfig provides config for hostmetricsreceiver/disk metrics.
 type MetricsConfig struct {
 	SystemDiskIo                MetricConfig `mapstructure:"system.disk.io"`
 	SystemDiskIoTime            MetricConfig `mapstructure:"system.disk.io_time"`
@@ -60,7 +60,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/disk metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/disk metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

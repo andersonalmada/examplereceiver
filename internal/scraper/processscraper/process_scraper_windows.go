@@ -4,7 +4,7 @@
 //go:build windows
 // +build windows
 
-package processscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/processscraper"
+package processscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper"
 
 import (
 	"fmt"
@@ -14,8 +14,8 @@ import (
 	"github.com/shirou/gopsutil/v3/cpu"
 	"go.opentelemetry.io/collector/pdata/pcommon"
 
-	"github.com/andersonalmada/examplereceiver/internal/scraper/processscraper/internal/metadata"
-	"github.com/andersonalmada/examplereceiver/internal/scraper/processscraper/ucal"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/metadata"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/ucal"
 )
 
 func (s *scraper) recordCPUTimeMetric(now pcommon.Timestamp, cpuTime *cpu.TimesStat) {

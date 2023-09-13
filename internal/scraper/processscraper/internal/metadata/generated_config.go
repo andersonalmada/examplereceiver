@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/process metrics.
+// MetricsConfig provides config for hostmetricsreceiver/process metrics.
 type MetricsConfig struct {
 	ProcessContextSwitches     MetricConfig `mapstructure:"process.context_switches"`
 	ProcessCPUTime             MetricConfig `mapstructure:"process.cpu.time"`
@@ -89,7 +89,7 @@ type ResourceAttributeConfig struct {
 	Enabled bool `mapstructure:"enabled"`
 }
 
-// ResourceAttributesConfig provides config for examplereceiver/process resource attributes.
+// ResourceAttributesConfig provides config for hostmetricsreceiver/process resource attributes.
 type ResourceAttributesConfig struct {
 	ProcessCommand        ResourceAttributeConfig `mapstructure:"process.command"`
 	ProcessCommandLine    ResourceAttributeConfig `mapstructure:"process.command_line"`
@@ -126,7 +126,7 @@ func DefaultResourceAttributesConfig() ResourceAttributesConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/process metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/process metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics            MetricsConfig            `mapstructure:"metrics"`
 	ResourceAttributes ResourceAttributesConfig `mapstructure:"resource_attributes"`

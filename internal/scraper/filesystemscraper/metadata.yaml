@@ -1,4 +1,4 @@
-type: examplereceiver/filesystem
+type: hostmetricsreceiver/filesystem
 
 parent: hostmetrics
 

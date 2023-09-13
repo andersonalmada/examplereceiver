@@ -23,7 +23,7 @@ func (ms *MetricConfig) Unmarshal(parser *confmap.Conf) error {
 	return nil
 }
 
-// MetricsConfig provides config for examplereceiver/cpu metrics.
+// MetricsConfig provides config for hostmetricsreceiver/cpu metrics.
 type MetricsConfig struct {
 	SystemCPULogicalCount  MetricConfig `mapstructure:"system.cpu.logical.count"`
 	SystemCPUPhysicalCount MetricConfig `mapstructure:"system.cpu.physical.count"`
@@ -48,7 +48,7 @@ func DefaultMetricsConfig() MetricsConfig {
 	}
 }
 
-// MetricsBuilderConfig is a configuration for examplereceiver/cpu metrics builder.
+// MetricsBuilderConfig is a configuration for hostmetricsreceiver/cpu metrics builder.
 type MetricsBuilderConfig struct {
 	Metrics MetricsConfig `mapstructure:"metrics"`
 }

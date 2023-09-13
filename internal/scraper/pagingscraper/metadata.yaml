@@ -1,4 +1,4 @@
-type: examplereceiver/paging
+type: hostmetricsreceiver/paging
 
 parent: hostmetrics
 
