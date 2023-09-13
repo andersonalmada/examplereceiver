@@ -4,7 +4,7 @@
 //go:build linux || darwin || freebsd || openbsd
 // +build linux darwin freebsd openbsd
 
-package processesscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processesscraper"
+package processesscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/processesscraper"
 
 import (
 	"context"
@@ -13,7 +13,7 @@ import (
 	"github.com/shirou/gopsutil/v3/common"
 	"github.com/shirou/gopsutil/v3/process"
 
-	"github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processesscraper/internal/metadata"
+	"github.com/andersonalmada/examplereceiver/internal/scraper/processesscraper/internal/metadata"
 )
 
 const enableProcessesCount = true

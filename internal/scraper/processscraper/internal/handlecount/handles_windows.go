@@ -4,7 +4,7 @@
 //go:build windows
 // +build windows
 
-package handlecount // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/processscraper/internal/handlecount"
+package handlecount // import "github.com/andersonalmada/examplereceiver/internal/scraper/processscraper/internal/handlecount"
 
 import (
 	"errors"

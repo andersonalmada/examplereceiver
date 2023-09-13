@@ -6,4 +6,4 @@
 
 //go:generate mdatagen metadata.yaml
 
-package loadscraper // import "github.com/open-telemetry/opentelemetry-collector-contrib/receiver/hostmetricsreceiver/internal/scraper/loadscraper"
+package loadscraper // import "github.com/andersonalmada/examplereceiver/internal/scraper/loadscraper"
